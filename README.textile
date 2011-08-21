@@ -21,3 +21,5 @@ __PACKAGE__->config(
     output_encoding => "x-utf8-softbank",
 );
 </pre>
+
+http://stackoverflow.com/questions/5858596/how-to-make-mason-2-utf-8-clean
