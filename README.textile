@@ -5,15 +5,19 @@ Mason2の**.(mc,mi,mp)をuse utf8で書くためのプラグインです。
 
 カスタマイズ例1
 
-    $m->output_encoding("x-utf8-docomo");
+<pre>
+$m->output_encoding("x-utf8-docomo");
+</pre>
 
 カスタマイズ例2
 
-    package MyCatalystApp::View::Mason;
+<pre>
+package MyCatalystApp::View::Mason;
 
-    use Moose;
-    extends qw(Catalyst::View::Mason2);
+use Moose;
+extends qw(Catalyst::View::Mason2);
 
-    __PACKAGE__->config(
-	output_encoding => "x-utf8-softbank",
-    );
+__PACKAGE__->config(
+    output_encoding => "x-utf8-softbank",
+);
+</pre>
