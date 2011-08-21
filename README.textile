@@ -1,0 +1,19 @@
+Mason2の**.(mc,mi,mp)をuse utf8で書くためのプラグインです。
+明示的にuse utf8しなくても、onになります。
+
+結果のbodyはデフォルトで、encode("utf8", ...)されます。
+
+カスタマイズ例1
+
+    $m->output_encoding("x-utf8-docomo");
+
+カスタマイズ例2
+
+    package MyCatalystApp::View::Mason;
+
+    use Moose;
+    extends qw(Catalyst::View::Mason2);
+
+    __PACKAGE__->config(
+	output_encoding => "x-utf8-softbank",
+    );
