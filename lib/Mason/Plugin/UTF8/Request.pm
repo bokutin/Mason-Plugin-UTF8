@@ -13,15 +13,15 @@ after 'process_output' => sub {
     }
 };
 
-around 'run' => sub {
-    my $orig = shift;
-    my $self = shift;
-
-    my %params = @_;
-    while (my ($key, $value) = each(%params)) {
-        $value = decode_utf8($value);
-    }
-    $self->$orig(%params);
-};
+#around 'run' => sub {
+#    my $orig = shift;
+#    my $self = shift;
+#
+#    my %params = @_;
+#    while (my ($key, $value) = each(%params)) {
+#        $value = decode_utf8($value);
+#    }
+#    $self->$orig(%params);
+#};
 
 1;
