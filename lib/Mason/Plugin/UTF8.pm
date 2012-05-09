@@ -3,8 +3,6 @@ package Mason::Plugin::UTF8;
 use Moose;
 with 'Mason::Plugin';
 
-our $VERSION = 0.001;
-
 1;
 
 =head1 AUTHOR
